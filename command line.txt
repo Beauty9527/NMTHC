@@ -1,0 +1,29 @@
+char_corpus_SR.py 调试参数
+--data_dir /itmslhppc/itmsl0212/Projects/python/wrsCode/seq2seq/data/fan/ --input_file mpileup_genome.pileup --uncovered_file SR_uncovered.fasta --covered_long SR_covered_long.fasta --covered_label SR_label.fasta --long_label_corpus long_label_corpus.txt --window 19
+
+predict_batch.py 调试参数
+--data-dir /itmslhppc/itmsl0212/Projects/python/wrsCode/seq2seq/data/fan/ --long-corpus long_corpus.txt --label-corpus label_corpus.txt --check-point-path weight/cp.ckpt --model-hdf5-path weight/model.h5 --output corrected_covered.fasta
+
+predict_batch2.py调试参数
+--data-dir /itmslhppc/itmsl0212/Projects/python/wrsCode/seq2seq/data/fan/ --long-corpus long_corpus.txt --label-corpus label_corpus.txt --check-point-path weight/cp.ckpt --model-hdf5-path weight/model.h5 --output corrected_covered.fasta
+
+predict_bi_lstm.py 调试参数
+--data-dir /itmslhppc/itmsl0212/Projects/python/wrsCode/seq2seq/data/fan/ --long-corpus long_corpus.txt --label-corpus label_corpus.txt --check-point-path weight/cp.ckpt --model-hdf5-path weight/model.h5 --output corrected_covered.fasta
+
+train_batch 调试参数
+--data-dir /itmslhppc/itmsl0212/Projects/python/wrsCode/seq2seq/data/fan/ --long-corpus long_corpus.txt --label-corpus label_corpus.txt --check-point-path weight/cp.ckpt --model-hdf5-path weight/model.h5
+
+train_batch2.py 调试参数
+--data-dir /itmslhppc/itmsl0212/Projects/python/wrsCode/seq2seq/data/fan/ --long-corpus long_corpus.txt --label-corpus label_corpus.txt --check-point-path weight/cp.ckpt --model-hdf5-path weight/model.h5
+
+train_bi_lstm.py 调试参数
+--data-dir /itmslhppc/itmsl0212/Projects/python/wrsCode/seq2seq/data/fan/ --long-corpus long_corpus.txt --label-corpus label_corpus.txt --check-point-path weight/cp.ckpt --model-hdf5-path weight/model.h5
+
+word_corpus_SR 调试参数
+--data_dir /itmslhppc/itmsl0212/Projects/python/wrsCode/seq2seq/data/fan/ --input_file mpileup_genome.pileup --uncovered_file SR_uncovered.fasta --covered_long SR_covered_long.fasta --covered_label SR_label.fasta --long_corpus long_corpus.txt --label_corpus label_corpus.txt
+
+word_pure_unequal_corpus.py 调试参数
+--data_dir /itmslhppc/itmsl0212/Projects/python/wrsCode/seq2seq/data/fan/ --input_file mpileup_genome.pileup --uncovered_file SR_uncovered.fasta --covered_long SR_covered_long.fasta --covered_label SR_label.fasta --long_corpus long_corpus.txt --label_corpus label_corpus.txt
+
+split_big_data.py调试参数 用于分割大的数据
+--data_dir /itmslhppc/itmsl0212/Projects/python/wrsCode/seq2seq/data/ecoli_part/ --input_whole_file ecoli_pacbio.fasta --output_part_file part_error.fasta --choose_ratio 1000
